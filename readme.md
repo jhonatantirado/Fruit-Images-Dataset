@@ -1,21 +1,21 @@
-# Fruits-360: A dataset of images containing fruits #
+# Fruits-360: A dataset of images containing fruits and vegetables #
 
-## Version: 2019.05.06.1 ##
+## Version: 2019.06.23.0 ##
 
-A high-quality, dataset of images containing fruits. The following fruits are included: 
-Apples (different varieties: Crimson Snow, Golden, Golden-Red, Granny Smith, Pink Lady, Red, Red Delicious), Apricot, Avocado, Avocado ripe, Banana (Yellow, Red, Lady Finger), Cactus fruit, Cantaloupe (2 varieties), Carambula, Cherry (different varieties, Rainier), Cherry Wax (Yellow, Red, Black), Chestnut, Clementine, Cocos, Dates, Granadilla, Grape (Blue, Pink, White (different varieties)), Grapefruit (Pink, White), Guava, Hazelnut, Huckleberry, Kiwi, Kaki, Kohlrabi, Kumsquats, Lemon (normal, Meyer), Lime, Lychee, Mandarine, Mango, Mangostan, Maracuja, Melon Piel de Sapo, Mulberry, Nectarine, Orange, Papaya, Passion fruit, Peach (different varieties), Pepino, Pear (different varieties, Abate, Kaiser, Monster, Red, Williams), Pepper (Red, Green, Yellow), Physalis (normal, with Husk), Pineapple (normal, Mini), Pitahaya Red, Plum (different varieties), Pomegranate, Pomelo Sweetie, Quince, Rambutan, Raspberry, Redcurrant, Salak, Strawberry (normal, Wedge), Tamarillo, Tangelo, Tomato (different varieties, Maroon, Cherry Red, Yellow), Walnut.
+A high-quality, dataset of images containing fruits and vegetables. The following fruits and vegetables are included: 
+Apples (different varieties: Crimson Snow, Golden, Golden-Red, Granny Smith, Pink Lady, Red, Red Delicious), Apricot, Avocado, Avocado ripe, Banana (Yellow, Red, Lady Finger), Cactus fruit, Cantaloupe (2 varieties), Carambula, Cherry (different varieties, Rainier), Cherry Wax (Yellow, Red, Black), Chestnut, Clementine, Cocos, Dates, Granadilla, Grape (Blue, Pink, White (different varieties)), Grapefruit (Pink, White), Guava, Hazelnut, Huckleberry, Kiwi, Kaki, Kohlrabi, Kumsquats, Lemon (normal, Meyer), Lime, Lychee, Mandarine, Mango (Green, Red), Mangostan, Maracuja, Melon Piel de Sapo, Mulberry, Nectarine, Onion (Red, White), Orange, Papaya, Passion fruit, Peach (different varieties), Pepino, Pear (different varieties, Abate, Kaiser, Monster, Red, Williams), Pepper (Red, Green, Yellow), Physalis (normal, with Husk), Pineapple (normal, Mini), Pitahaya Red, Plum (different varieties), Pomegranate, Pomelo Sweetie, Potato (Red, White), Quince, Rambutan, Raspberry, Redcurrant, Salak, Strawberry (normal, Wedge), Tamarillo, Tangelo, Tomato (different varieties, Maroon, Cherry Red, Yellow), Walnut.
 
 ## Dataset properties ##
 
-Total number of images: 71125.
+Total number of images: 74681.
 
-Training set size: 53177 images (one fruit per image).
+Training set size: 55839 images (one fruit or vegetable per image).
 
-Test set size: 17845 images (one fruit per image).
+Test set size: 18739 images (one fruit or vegetable per image).
 
 Multi-fruits set size: 103 images (more than one fruit (or fruit class) per image)
 
-Number of classes: 103 (fruits).
+Number of classes: 109 (fruits).
 
 Image size: 100x100 pixels.
 
@@ -31,7 +31,7 @@ Folder [test-multiple_fruits](test-multiple_fruits) contains images with multipl
 
 Folder [src/image_classification](src/image_classification) contains the python code for training the neural network. It uses the TensorFlow library.
 
-Folder [src/utils](src/utils) contains the C++ code used for extracting the fruits from background.
+Folder [src/utils](src/utils) contains the C++ code used for extracting the fruits or vegetables from background.
 
 Folder [papers](papers) contains the research papers related to this dataset.
 
@@ -45,7 +45,7 @@ Horea Muresan, [Mihai Oltean](https://mihaioltean.github.io), [Fruit recognition
 
 ## How we created the dataset ##
 
-Fruits were planted in the shaft of a low speed motor (3 rpm) and a short movie of 20 seconds was recorded. 
+Fruits and vegetables were planted in the shaft of a low speed motor (3 rpm) and a short movie of 20 seconds was recorded. 
 
 A Logitech C920 camera was used for filming the fruits. This is one of the best webcams available.
 
@@ -122,7 +122,9 @@ Fruits were filmed at the dates given below (YYYY.MM.DD):
 
 2018.12.22 - Pomelo Sweetie.
 
-2019.04.21 - Apple Crimson Snow, Apple Pink Lady, Kohlrabi, Pear Red, Pepper (Red, Yellow, Green).
+2019.04.21 - Apple Crimson Snow, Apple Pink Lady, Kohlrabi, Mango Red, Pear Red, Pepper (Red, Yellow, Green).
+
+2019.06.18 - Onion Red, Onion Red Peeled, Onion White, Potato Red Washed, Potato White.
 
 ## License ##
 
